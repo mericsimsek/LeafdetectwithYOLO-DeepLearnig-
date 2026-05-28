@@ -6,7 +6,7 @@ Bu proje, PlantVillage veri seti kullanılarak 38 farklı bitki sınıfı ve has
 * **Model:** YOLOv8 Nano (yolov8n)
 * **Veri Seti:** PlantVillage (Kagglehub üzerinden entegre)
 * **Sınıf Sayısı:** 38 (Elma Pası, Domates Küfü, Sağlıklı vb.)
-* **Eğitim Süresi:** ~3.7 Saat (Google Colab T4 GPU)
+* **Eğitim Süresi:** ~5 Saat (Google Colab T4 GPU)
 * **Başarı Oranı:** mAP50: %99.4 | mAP50-95: %98.5
 
 ## 📊 Performans Analizi (Metrics)
@@ -19,7 +19,7 @@ Model 50 epoch boyunca aşırı öğrenmeye (overfitting) düşmeden istikrarlı
 
 ### 2. Karmaşıklık Matrisi (Confusion Matrix)
 Köşegen üzerindeki koyu mavi hat, modelin 38 sınıf arasında neredeyse hiç hata yapmadığını, arka planla (background) hastalıkları mükemmel ayrıştırdığını kanıtlamaktadır.
-![Confusion Matrix](metrics/confusion_matrix.jpg)
+![Confusion Matrix](metrics/confusion_matrix.png)
 
 ### 3. Precision-Recall (Kesinlik-Duyarlılık) Dengesi
 Modelin "yanlış alarm vermeme" (Precision) ve "hastalıkları kaçırmama" (Recall) dengesi 1.0 tavan seviyesine ulaşmıştır.
