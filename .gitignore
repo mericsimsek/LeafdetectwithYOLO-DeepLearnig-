@@ -1,0 +1,12 @@
+# Veri setleri ve önbellekler
+yolo_plantvillage/
+datasets/
+__pycache__/
+*.cache
+
+# Sadece best.pt gitsin, diğer ağır model dosyaları gitmesin
+*.pt
+!weights/best.pt
+
+# İşletim sistemi kalıntıları
+.DS_Store
