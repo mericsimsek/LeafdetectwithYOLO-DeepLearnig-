@@ -10,3 +10,8 @@ __pycache__/
 
 # İşletim sistemi kalıntıları
 .DS_Store
+
+*.pt
+*.pth
+!weights/best.pt
+!weights/resnet18_fast_plant.pth
